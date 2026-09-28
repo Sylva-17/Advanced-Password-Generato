@@ -1,0 +1,17 @@
+
+h2{
+    text-align : center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+}
+.parameters{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: 2px solid pink;
+}
