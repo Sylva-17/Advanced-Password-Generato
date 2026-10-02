@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Password Generator</title>
     <link rel="stylesheet" href="pssgenad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="passgenad.js" defer></script>
 </head>
 <body>
@@ -13,13 +14,14 @@
     
 
         <input type="text" class="nbr-caracters" placeholder="choose the number of characters" required>
+        <label class="password"></label>
         <div class="parameters">
-            <input type="checkbox" class="filter" id="no-numbers"><label>Without numbers</label>
-            <input type="checkbox" class="filter" id="no-letters"><laber>Without letters</laber>
-            <input type="checkbox" class="filter" id="no-symbols"><label>Without suymbols</label>
-            <input type="checkbox" class="filter" id="miniscule-only"><label>miniscule Only</label>
+            <label class="check"><input type="checkbox" class="filter"  id="no-numbers" display="none"><i class="fa-solid fa-check" ></i>Without numbers</label>
+            <label class="check"><input type="checkbox" class="filter"  id="no-letters"><i class="fa-solid fa-check" ></i>Without letters</label>
+            <label class="check"><input type="checkbox" class="filter"  id="no-symbols"><i class="fa-solid fa-check" ></i>Without suymbols</label>
+            <label class="check"><input type="checkbox" class="filter"  id="miniscule-only"><i class="fa-solid fa-check" ></i>miniscule Only</label>
         </div>
-        <input type="button" value="Generate">
+        <input class="gen-btn" type="button" value="Generate">
    </div>
 </body>
 </html>
