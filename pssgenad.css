@@ -14,6 +14,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: var(--primary-color);
+    color: var(--sec-color);
 }
 .container{
 
@@ -26,45 +27,69 @@ body{
 }
 
 .parameters{
-    width: 50%;
+    width: 90%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: left;
-    border: 2px solid white;
 
 }
 .filter{display: none;}
 .fa-check{
-    border: 1px solid white;
     border-radius: 50%;
     padding: 3px;
     margin: 6px;
+
 }
 .fa-check:hover{
     background-color:#106590 ;
     transition: 0.5s;
 }
-.fa-check::
+input[type="checkbox"]:checked ~ .fa-check{
+    background-color: var(--primary-color);
+    color: var(--thr-color);
+}
 .check{
-    border: 1px solid pink;
+    border: none;
+    border-radius: 29px;
+    
     color: var(--sec-color);
     padding: 10px;
     margin: 5px;
     background-color: var(--fourth-color);
+
 }
 .nbr-caracters{
     padding: 10px;
     margin: 20px;
+    background-color: var(--fourth-color);
+    border: none;
+    outline: none;
+    border-radius: 29px;
+    color: white;
 }
 
 .password{
-    border: 2px solid violet;
     height: 30px;
     width: 50%;
-    margin: 10px;
+    margin: 5px;
+    background-color: var(--fourth-color);
+    border-radius: 29px;
+    
 }
 .gen-btn{
     margin: 10px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 29px;
+    border: none;
+   background: linear-gradient(135deg, #074564, #8ecae6);
+   
+color: white;
+
+}
+.gen-btn:hover{
+    transform: translateY(-5px);
+    transition: 0.6s;
 
 }
